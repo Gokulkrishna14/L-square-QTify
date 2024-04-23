@@ -1,0 +1,11 @@
+.searchBox {
+    width: 100%;
+    max-width: 558px;
+    max-height : 4.0rem;  
+    background-color: var(--color-white);
+    display: flex;
+}
+
+.searchBox input::placeholder {
+    color: black;
+}

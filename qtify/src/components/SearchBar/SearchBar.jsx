@@ -1,21 +1,19 @@
 import SearchIcon from '@mui/icons-material/Search';
 import styles from "./SearchBar.module.css";
-import { InputAdornment, TextField } from '@mui/material';
 
 export default function SearchBar({placeholder}){
 
     return(
-        <TextField
-            className={styles.searchBox}
-            placeholder={placeholder}
-            InputProps={{
-                startAdornment: (
-                    <InputAdornment position="start">
-                        <SearchIcon />
-                    </InputAdornment>
-                ),
-            }}
-        />
+        <div className={styles.searchBox}>
+            <div className={styles.searchText}>
+                <input type="text" placeholder={placeholder}  />
+            </div>
+            <div className={styles.searchIcon}>
+                <SearchIcon  />
+            </div>
+            
+        </div>
+        
     )
     
 }

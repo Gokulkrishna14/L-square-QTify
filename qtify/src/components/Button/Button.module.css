@@ -11,6 +11,6 @@
     gap: 10px;
 }
 
-.button:hover {
+button:hover {
     cursor: pointer;
 }

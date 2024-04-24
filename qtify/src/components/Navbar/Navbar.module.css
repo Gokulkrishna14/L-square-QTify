@@ -2,6 +2,7 @@
     background-color: var(--color-primary);
     height: 74px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 32px;
     align-items: center;
 }

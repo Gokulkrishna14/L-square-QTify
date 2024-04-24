@@ -8,7 +8,7 @@ export function Navbar(){
     return (
         <div className={styles.navbar}>
             <Logo />
-            <SearchBar placeholder={"search"} />
+            <SearchBar placeholder={"search a album of your choice"} />
             <Button>Give Feedback</Button>
         </div>     
     );

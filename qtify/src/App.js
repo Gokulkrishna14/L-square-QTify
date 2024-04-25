@@ -1,5 +1,6 @@
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
+import { Hero } from "./components/Hero/Hero";
 import { StyledEngineProvider } from '@mui/material';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <>
       <StyledEngineProvider injectFirst>
         <Navbar />
+        <Hero />
       </StyledEngineProvider> 
       </>
   );

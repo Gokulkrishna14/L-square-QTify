@@ -1,0 +1,32 @@
+.hero {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image {
+    height: auto;
+}
+
+.text {
+    color: var(--color-white); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p {
+    font-size: 32px;
+    font-weight: 600;
+}
+

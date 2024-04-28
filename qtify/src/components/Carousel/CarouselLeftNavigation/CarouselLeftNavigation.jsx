@@ -15,8 +15,13 @@ export function CarouselLeftNavigation() {
     }, [swiper]); 
 
     return (
-        <div style={{ position: "absolute", top: "65%", left: "30px", transform: "translate(-50%, -50%)", cursor: "pointer", zIndex: 1000 }}>
-            {!isBeginning && <LeftArrow onClick={() => swiper.slidePrev()} />}
+        <div style={{ position: "relative", cursor: "pointer", height: "100%", width: "100%" }}>
+            {!isBeginning && (
+                <div style={{ position: "absolute", top: "70%", left: "3px", transform: "translateY(-500%)" }}>
+                    <LeftArrow onClick={() => swiper.slidePrev()} />
+                </div>
+            )}
         </div>
     );
 }
+

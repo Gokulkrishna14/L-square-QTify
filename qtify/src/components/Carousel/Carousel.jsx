@@ -27,13 +27,13 @@ const Carousel = ({ data }) => {
                 allowTouchMove
             >
                 <CarouselLeftNavigation />
+                <CarouselRightNavigation />
                 <Controls swiper={swiper} />
                 {data.map((ele, index) => (
                     <SwiperSlide key={index} className={styles.swiperSlide}>
                         <CardSong data={ele} />
                     </SwiperSlide>
                 ))}
-                <CarouselRightNavigation />
             </Swiper>
         </div>
     );

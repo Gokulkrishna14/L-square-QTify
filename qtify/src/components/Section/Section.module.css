@@ -1,0 +1,25 @@
+.section {
+    padding: 30px;
+}
+
+.heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.toggleText{
+    color : var(--color-primary);
+    font-size: var(--font-md);
+}
+
+.toggleText {
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px; 
+}

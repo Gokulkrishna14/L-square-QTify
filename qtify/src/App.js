@@ -1,14 +1,15 @@
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
-import { Hero } from "./components/Hero/Hero";
 import { StyledEngineProvider } from '@mui/material';
+import { HomePage } from "./pages/HomePage/HomePage";
+
 
 function App() {
   return (
       <>
       <StyledEngineProvider injectFirst>
         <Navbar />
-        <Hero />
+        <HomePage />
       </StyledEngineProvider> 
       </>
   );

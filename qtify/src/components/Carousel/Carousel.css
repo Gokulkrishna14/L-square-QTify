@@ -1,0 +1,22 @@
+/* Carousel.module.css */
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.swiper-container {
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    width: calc(100% / 7);
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+

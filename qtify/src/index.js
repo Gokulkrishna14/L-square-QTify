@@ -3,12 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage  from './pages/HomePage/HomePage';
+import AlbumPage from './pages/AlbumPage/AlbumPage';
+
+
+const routeConfig = (
+  <Routes>
+    <Route path="/" element={<App />}>
+      <Route index element={<HomePage />} />
+      <Route path="album/:albumId" element={<AlbumPage />} />
+    </Route>
+  </Routes>
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    {routeConfig}
+  </BrowserRouter>
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

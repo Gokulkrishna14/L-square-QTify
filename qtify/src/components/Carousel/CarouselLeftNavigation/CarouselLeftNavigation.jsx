@@ -18,7 +18,7 @@ export function CarouselLeftNavigation() {
         <div style={{ position: "relative", cursor: "pointer", height: "100%", width: "100%" }}>
             {!isBeginning && (
                 <div style={{ position: "absolute", top: "70%", left: "3px", transform: "translateY(-500%)" }}>
-                    <LeftArrow onClick={() => swiper.slidePrev()} />
+                    <LeftArrow onClick={() => swiper.slide()} />
                 </div>
             )}
         </div>

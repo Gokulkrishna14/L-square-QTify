@@ -15,7 +15,7 @@ const Controls = ({ swiper }) => {
     return <></>;
 };
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data , type}) => {
     const swiper = useSwiper();
 
     return (
@@ -31,7 +31,7 @@ const Carousel = ({ data }) => {
                 <Controls swiper={swiper} />
                 {data.map((ele, index) => (
                     <SwiperSlide key={index} className={styles.swiperSlide}>
-                        <CardSong data={ele} />
+                        <CardSong type={type} data={ele} />
                     </SwiperSlide>
                 ))}
             </Swiper>

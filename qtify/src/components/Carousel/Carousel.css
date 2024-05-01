@@ -1,7 +1,11 @@
+
 .wrapper {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
+
+
 
 .swiper-container {
     display: flex;
